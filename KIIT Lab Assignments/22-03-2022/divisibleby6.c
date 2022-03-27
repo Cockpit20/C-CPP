@@ -7,7 +7,6 @@ int main()
         {
             if (i%6==0)
             {
-            // printf("%d ",i);
             c++;
             sum=sum+i;
             }
