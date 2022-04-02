@@ -12,7 +12,6 @@ void display(int n,char ch)
 {
     for (int i=1;i<=n;i++)
     {
-        printf("%c",ch);
-        printf("\n");
+        printf("%c ",ch);
     }
 }
