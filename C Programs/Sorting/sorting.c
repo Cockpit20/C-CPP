@@ -22,7 +22,7 @@ int main()
         scanf("%d",&n[i]);
     }
     // Call the functions and sort as per requirement
-    CyclicSort(n,length);
+    InsertionSort(n,length);
     printf("The Numbers In Ascending Order Is: \n");
     for (int i=0;i<length;i++)
     printf("%d ",n[i]); 
