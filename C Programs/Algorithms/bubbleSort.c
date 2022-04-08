@@ -3,7 +3,7 @@ void bubbleSort(int arr[]);
 void swap(int arr[], int a, int b);
 int main()
 {
-    int arr[] = {54,23,32,13,8};
+    int arr[] = {54, 23, 32, 13, 8};
     for (int i = 0; i <= 4; i++)
     {
         printf("%d ", arr[i]);

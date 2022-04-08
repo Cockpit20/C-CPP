@@ -1,5 +1,5 @@
 #include <stdio.h>
-void bubbleSort(int arr[]);
+void insertionSort(int arr[]);
 void swap(int arr[], int a, int b);
 int main()
 {
@@ -9,13 +9,13 @@ int main()
         printf("%d ", arr[i]);
     }
     printf("\n");
-    bubbleSort(arr);
+    insertionSort(arr);
     for (int i = 0; i <= 4; i++)
     {
         printf("%d ", arr[i]);
     }
 }
-void bubbleSort(int arr[])
+void insertionSort(int arr[])
 {
     for (int i = 0; i <= 3; i++)
     {
