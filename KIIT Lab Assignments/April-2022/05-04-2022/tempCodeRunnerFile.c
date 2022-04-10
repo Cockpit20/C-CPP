@@ -1,17 +1,16 @@
 #include<stdio.h>
-int gcd_recursive(int a,int b);
+int fact_recursive(int n);
 int main()
 {
-    int a,b;
-    printf("Please enter 2 numbers:");
-    scanf("%d %d",&a,&b);
-    int gcd=a>b?gcd_recursive(a,b):gcd_recursive(b,a);
-    printf("The gcd of %d and %d is %d",a,b,gcd);
+    for (int i = 1; i <= 8; i++)
+    {
+       printf("The factorial of %d is %d\n",i,fact_recursive(i));
+    }
 }
-int gcd_recursive(int a,int b)
+int fact_recursive(int n)
 {
-    if(a%b==0)
-    return b;
+    if(n==0||n==1)
+    return 1;
     else
-    return gcd_recursive(b,a%b);
+    return n*fact_recursive(n-1);
 }

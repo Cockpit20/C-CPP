@@ -5,7 +5,7 @@ int main()
     int n;
     printf("Please enter a number:");
     scanf("%d",&n);
-    printf("The factorial of %d is %d",n,fib_recursive(n));
+    printf("Term %d of fibonacci series is %d",n,fib_recursive(n));
 }
 int fib_recursive(int n)
 {

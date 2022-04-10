@@ -7,8 +7,8 @@ int main()
     printf("Enter the value of n:");
     scanf("%d",&n);
     int largest=find_max(n);
-    int leaderCount=count_leader(n);
     printf("The largest number is %d\n",largest);
+    int leaderCount=count_leader(n);
     printf("The number of leaders is %d",leaderCount);
 }
 int find_max(int n)

@@ -4,7 +4,7 @@ int main()
     int n[20];
     for (int i=0;i<20;i++)
     {
-        printf("Enter the marks of student %d:",i);
+        printf("Enter the marks of student %d:",i+1);
         scanf("%d",&n[i]);
     }
     int sum=0,c=0;

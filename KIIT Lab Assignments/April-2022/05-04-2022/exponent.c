@@ -3,7 +3,7 @@ int exp_recursive(int a,int b);
 int main()
 {
     int a,b;
-    printf("Please enter 2 numbers:");
+    printf("Enter the value of a and b:");
     scanf("%d %d",&a,&b);
     printf("%d^%d=%d",a,b,exp_recursive(a,b));
 }
