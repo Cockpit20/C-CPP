@@ -11,6 +11,5 @@ int dc_recursive(int n)
 {
     if(n/10==0)
     return 1;
-    else
     return 1+dc_recursive(n/10);
 }
