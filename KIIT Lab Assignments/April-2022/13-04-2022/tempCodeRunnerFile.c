@@ -20,14 +20,15 @@ int main()
         }
         printf("\n");        
     }
-    printf("Traspose of the Matrix:\n");
+    int max=matrix[0][0];
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 5; j++)
         {
-            printf("%d\t",matrix[j][i]);
-        }
-        printf("\n");        
+           if(matrix[i][j]>max)
+           max=matrix[i][j];
+        }       
     }
+    printf("The largest element in the matrix is %d",max);
     
 }
