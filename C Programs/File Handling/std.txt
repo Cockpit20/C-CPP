@@ -1,0 +1,4 @@
+Roll number of student= 21052925
+Name of student= SoumyadeepChandra
+Gender of student= Male
+Student Marks = 87.20
