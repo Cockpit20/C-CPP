@@ -27,10 +27,6 @@ int main()
     }
     fclose(fp);
     fclose(fp1);
-    // rename temp.txt file to std.txt
-    // rename("temp.txt", "std.txt");
-    // // remove temp file
-    // remove("temp.txt");
     /*now, print content of the file*/
     fp = fopen("temp.txt", "r");
     if (fp == NULL)

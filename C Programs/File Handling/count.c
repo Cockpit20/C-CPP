@@ -26,7 +26,7 @@ int main()
         if(ch=='\t')
         not++;
     }
-    printf("No.of characters in the file is %d\n",noc);
+    printf("\nNo.of characters in the file is %d\n",noc);
     printf("No.of lines in the file is %d\n",nol);
     printf("No.of blankspaces in the file is %d\n",nob);
     printf("No.of tabs in the file is %d\n",not);

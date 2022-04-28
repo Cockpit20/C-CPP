@@ -11,5 +11,4 @@ int main()
     }
     fclose(fp1);
     fclose(fp2);
-    
 }
