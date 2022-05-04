@@ -2,8 +2,8 @@
 void function(int *arr,int *min,int *max,int *count);
 int main()
 {
-    int arr[5];
-    for (int i = 0; i < 5; i++)
+    int arr[20];
+    for (int i = 0; i < 20; i++)
     {
         printf("Enter number %d:",i+1);
         scanf("%d",&arr[i]);
@@ -19,7 +19,7 @@ int main()
 }
 void function(int *arr,int *min,int *max,int *count)
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 20; i++)
     {
         if(*(arr+i)>*max)
         *max=*(arr+i);

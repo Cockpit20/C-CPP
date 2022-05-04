@@ -12,6 +12,12 @@ int main()
     {
         arr2[i] = arr[5 - i - 1];
     }
+    printf("Original Array: ");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\nCopied Array: ");
     for (int i = 0; i < 5; i++)
     {
         printf("%d ", arr2[i]);

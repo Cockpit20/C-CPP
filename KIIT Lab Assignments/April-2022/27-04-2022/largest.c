@@ -2,8 +2,8 @@
 int largest(int *arr);
 int main()
 {
-    int arr[5];
-    for (int i = 0; i < 5; i++)
+    int arr[20];
+    for (int i = 0; i < 20; i++)
     {
         printf("Enter number %d:",i+1);
         scanf("%d",&arr[i]);
@@ -14,7 +14,7 @@ int main()
 int largest(int *arr)
 {
     int max=*arr;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 20; i++)
     {
         if(*(arr+i)>max)
         max=*(arr+i);
