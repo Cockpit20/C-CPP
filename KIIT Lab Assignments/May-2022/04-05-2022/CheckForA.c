@@ -12,9 +12,14 @@ int main()
     p[2]=c;
     p[3]=d;
     p[4]=e;
+    int count=0;
     for (int i = 0; i < 5; i++)
     {
-        printf("%s \n",p[i]);
+        for (int j = 0; p[i][j]!='\0'; j++)
+        {
+            if(p[i][j]=='a')
+            count++;
+        }
     }
-    
+    printf("%d",count);
 }
