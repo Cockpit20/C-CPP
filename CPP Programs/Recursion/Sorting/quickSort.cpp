@@ -31,7 +31,6 @@ void quickSort(int arr[], int low, int high)
     }
     quickSort(arr, low, end);
     quickSort(arr, start, high);
-    
 }
 
 int main()
