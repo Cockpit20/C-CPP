@@ -25,10 +25,11 @@ int main()
 
     float salary_sum=0;
     printf("Details of the employees:\n");
+    printf("Name\tAddress\tAge\tSalary\n");
     for (int i = 0; i < n; i++)
     {
         salary_sum+=employees[i].salary;
-        printf("%s %s %d %.2f\n",employees[i].name,employees[i].address,employees[i].age,employees[i].salary);
+        printf("%s\t%s\t%d\t%.2f\n",employees[i].name,employees[i].address,employees[i].age,employees[i].salary);
     }
     printf("Average salary = %.2f",salary_sum/(float)n);
     
