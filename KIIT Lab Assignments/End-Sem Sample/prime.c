@@ -15,7 +15,6 @@ void allPrimes(int *so_start,int *so_end,int so_arr[],int *c)
             *(so_arr+*c)=i;
             *c=*c+1;
         }
-
     }
     return;
     
@@ -34,5 +33,4 @@ int main()
         printf("%d ",so_arr[i]);
     }
     printf("\nThe number of prime numbers in the range is %d",c);
-    
 }

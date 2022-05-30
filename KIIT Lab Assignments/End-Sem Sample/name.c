@@ -27,12 +27,12 @@ void replaceSpacesWithS(char so_name[])
 
 void insertKSpaces(char so_name[],char so_modified_so_name[])
 {
-    int k=6;
+    int k=21052925%10+1;
     for (int i = 0; i < strlen(so_name)*k; i++)
     {
-        if(i%6==0)
+        if(i%k==0)
         {
-            so_modified_so_name[i]=so_name[i/6];
+            so_modified_so_name[i]=so_name[i/k];
         }
         else
         so_modified_so_name[i]=' ';
@@ -60,7 +60,7 @@ int main()
     char so_name[150];
     char so_modified_so_name[150];
 
-    printf("Enter your so_name: ");
+    printf("Enter your name: ");
     gets(so_name);
     
     replaceWithX(so_name);

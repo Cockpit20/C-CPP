@@ -22,7 +22,6 @@ void display(struct so_person *so_persons)
             printf("%d\t%s\t%d\t%d-%d-%d\n",c,(so_persons+i)->so_name,(so_persons+i)->so_age,(so_persons+i)->so_date,(so_persons+i)->so_month,(so_persons+i)->so_year);
             c++;
         }
-        
     }
     
 }
@@ -37,6 +36,4 @@ int main()
     }
 
     display(so_persons);
-    
-
 }

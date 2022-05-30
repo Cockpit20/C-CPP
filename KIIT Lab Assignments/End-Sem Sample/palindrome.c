@@ -16,10 +16,8 @@ void allPalindromes(int *so_start,int *so_end,int so_arr[],int *so_c)
             *(so_arr+*so_c)=i;
             *so_c=*so_c+1;
         }
-
     }
     return;
-    
 }
 
 int main()
@@ -34,5 +32,4 @@ int main()
     {
         printf("%d ",so_arr[i]);
     }
-    
 }
