@@ -1,7 +1,7 @@
 #include<stdio.h>
-void allPrimes(int *start,int *end,int arr[],int *c)
+void allPrimes(int *so_start,int *so_end,int so_arr[],int *c)
 {
-    for (int i = *start; i <= *end; i++)
+    for (int i = *so_start; i <= *so_end; i++)
     {
         int count=0;
         for (int j = 1; j <= i; j++)
@@ -12,7 +12,7 @@ void allPrimes(int *start,int *end,int arr[],int *c)
         
         if(count==2)
         {
-            *(arr+*c)=i;
+            *(so_arr+*c)=i;
             *c=*c+1;
         }
 
@@ -23,15 +23,15 @@ void allPrimes(int *start,int *end,int arr[],int *c)
 
 int main()
 {
-    int x,y,arr[10000],c=0;
+    int so_x,so_y,so_arr[10000],c=0;
     printf("Enter the value of X and Y: ");
-    scanf("%d %d",&x,&y);
+    scanf("%d %d",&so_x,&so_y);
 
-    allPrimes(&x,&y,arr,&c);
+    allPrimes(&so_x,&so_y,so_arr,&c);
 
     for (int i = 0; i < c; i++)
     {
-        printf("%d ",arr[i]);
+        printf("%d ",so_arr[i]);
     }
     printf("\nThe number of prime numbers in the range is %d",c);
     

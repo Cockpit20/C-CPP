@@ -1,29 +1,40 @@
 #include<stdio.h>
 #include<string.h>
 
-void replaceWithX(char name[])
+void replaceWithX(char so_name[])
 {
     int i=0;
-    while(name[i]!='\0')
+    while(so_name[i]!='\0')
     {
-        if(name[i]=='a' || name[i]=='e' || name[i]=='i' ||name[i]=='o' || name[i]=='u' || name[i]=='A' || name[i]=='E' || name[i]=='I' || name[i]=='O' || name[i]=='U')
-        name[i]='X';
+        if(so_name[i]=='a' || so_name[i]=='e' || so_name[i]=='i' ||so_name[i]=='o' || so_name[i]=='u' || so_name[i]=='A' || so_name[i]=='E' || so_name[i]=='I' || so_name[i]=='O' || so_name[i]=='U')
+        so_name[i]='X';
         i++;
     }
     return;
 }
 
-void insertKSpaces(char name[])
+void insertKSpaces(char so_name[],char so_modified_so_name[])
 {
+    int k=6;
+    for (int i = 0; i < strlen(so_name)*k; i++)
+    {
+        if(i%6==0)
+        {
+            so_modified_so_name[i]=so_name[i/6];
+        }
+        else
+        so_modified_so_name[i]=' ';
+    }
+    return;
 }
 
-void convertToUppercase(char name[])
+void convertToUppercase(char so_name[])
 {
     int i=0;
-    while(name[i]!='\0')
+    while(so_name[i]!='\0')
     {
-        if(name[i]>=97 && name[i]<=122)
-        name[i]=(char)(name[i]-32);
+        if(so_name[i]>=97 && so_name[i]<=122)
+        so_name[i]=(char)(so_name[i]-32);
         i++;
     }
     return;
@@ -33,16 +44,17 @@ void convertToUppercase(char name[])
 
 int main()
 {
-    char name[150];
+    char so_name[150];
+    char so_modified_so_name[150];
 
-    printf("Enter your name: ");
-    gets(name);
+    printf("Enter your so_name: ");
+    gets(so_name);
     
-    replaceWithX(name);
+    replaceWithX(so_name);
 
-    insertKSpaces(name);
+    insertKSpaces(so_name,so_modified_so_name);
 
-    convertToUppercase(name);
+    convertToUppercase(so_modified_so_name);
 
-    printf("%s",name);
+    printf("%s",so_modified_so_name);
 }
