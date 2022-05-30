@@ -4,13 +4,15 @@ void allPrimes(int *start,int *end,int arr[],int *c)
     
     for (int i = *start; i <= *end; i++)
     {
-        int count=0;
-        for (int j = 1; j <= i; j++)
+        int b=i;
+        int digit,s=0;
+        while(b>0)
         {
-            if(i%j==0)
-            count++;
+            digit=b%10;
+            s=s*10+digit;
+            b=b/10;
         }
-        if(count==2)
+        if(i==s)
         {
             *(arr+*c)=i;
             *c=*c+1;
