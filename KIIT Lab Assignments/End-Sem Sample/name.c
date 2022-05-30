@@ -13,6 +13,18 @@ void replaceWithX(char so_name[])
     return;
 }
 
+void replaceSpacesWithS(char so_name[])
+{
+    int i=0;
+    while(so_name[i]!='\0')
+    {
+        if(so_name[i]==' ')
+        so_name[i]=so_name[0];
+        i++;
+    }
+    return;
+}
+
 void insertKSpaces(char so_name[],char so_modified_so_name[])
 {
     int k=6;
@@ -42,6 +54,7 @@ void convertToUppercase(char so_name[])
 
 
 
+
 int main()
 {
     char so_name[150];
@@ -51,6 +64,8 @@ int main()
     gets(so_name);
     
     replaceWithX(so_name);
+
+    replaceSpacesWithS(so_name);
 
     insertKSpaces(so_name,so_modified_so_name);
 
