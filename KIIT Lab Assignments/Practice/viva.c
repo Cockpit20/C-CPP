@@ -1,0 +1,17 @@
+#include<stdio.h>
+int tmp;
+
+void func()
+{
+    static int tmp=10;
+    printf("%d",tmp);
+}
+
+int main()
+{
+    printf("%d",tmp);
+    func();
+    printf("%d",tmp);
+}
+
+
