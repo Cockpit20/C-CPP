@@ -1,18 +1,6 @@
 #include<stdio.h>
 #include<string.h>
 
-void replaceWithX(char so_name[])
-{
-    int i=0;
-    while(so_name[i]!='\0')
-    {
-        if(so_name[i]=='a' || so_name[i]=='e' || so_name[i]=='i' ||so_name[i]=='o' || so_name[i]=='u' || so_name[i]=='A' || so_name[i]=='E' || so_name[i]=='I' || so_name[i]=='O' || so_name[i]=='U')
-        so_name[i]='X';
-        i++;
-    }
-    return;
-}
-
 void replaceSpacesWithS(char so_name[])
 {
     int i=0;
@@ -40,18 +28,6 @@ void insertKSpaces(char so_name[],char so_modified_so_name[])
     return;
 }
 
-void convertToUppercase(char so_name[])
-{
-    int i=0;
-    while(so_name[i]!='\0')
-    {
-        if(so_name[i]>=97 && so_name[i]<=122)
-        so_name[i]=(char)(so_name[i]-32);
-        i++;
-    }
-    return;
-}
-
 
 
 
@@ -62,14 +38,20 @@ int main()
 
     printf("Enter your name: ");
     gets(so_name);
-    
-    replaceWithX(so_name);
+
+    int i=0,c=0;
+    while(so_name[i]!='\0')
+    {
+        if(so_name[i]=='a' || so_name[i]=='e' || so_name[i]=='i' ||so_name[i]=='o' || so_name[i]=='u' || so_name[i]=='A' || so_name[i]=='E' || so_name[i]=='I' || so_name[i]=='O' || so_name[i]=='U')
+        c++;
+        i++;
+    }
+
+    printf("Number of vowels= %d \n",c);
 
     replaceSpacesWithS(so_name);
 
     insertKSpaces(so_name,so_modified_so_name);
-
-    convertToUppercase(so_modified_so_name);
 
     printf("%s",so_modified_so_name);
 }
