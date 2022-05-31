@@ -26,7 +26,6 @@ int main()
     so_x=21052925%10+10;
     so_y=21052925%100+20;
 
-
     allPrimes(&so_x,&so_y,so_arr,&c);
 
     for (int i = 0; i < c; i++)
